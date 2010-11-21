@@ -12,8 +12,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "tally"
-  gem.homepage = "http://github.com/ivanacostarubio/tally"
+  gem.name = "contador"
+  gem.homepage = "http://github.com/ivanacostarubio/contador"
   gem.license = "MIT"
   gem.summary = %Q{This gem counts the numbers of words in a string. It returns each word and the multiplicity}
   gem.description = %Q{This gem counts the numbers of words in a string. It returns each word and the multiplicity}
@@ -26,21 +26,6 @@ Jeweler::Tasks.new do |gem|
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
-task :default => :test
 
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|

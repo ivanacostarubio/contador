@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{tally}
+  s.name = %q{contador}
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
     "spec/tally_spec.rb",
     "tally.gemspec"
   ]
-  s.homepage = %q{http://github.com/ivanacostarubio/tally}
+  s.homepage = %q{http://github.com/ivanacostarubio/contador}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
