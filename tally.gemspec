@@ -30,7 +30,8 @@ Gem::Specification.new do |s|
     "lib/.DS_Store",
     "lib/tally.rb",
     "spec/spec.opts",
-    "spec/tally_spec.rb"
+    "spec/tally_spec.rb",
+    "tally.gemspec"
   ]
   s.homepage = %q{http://github.com/ivanacostarubio/tally}
   s.licenses = ["MIT"]
