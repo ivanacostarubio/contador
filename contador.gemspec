@@ -27,11 +27,11 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "contador.gemspec",
     "lib/.DS_Store",
     "lib/tally.rb",
     "spec/spec.opts",
-    "spec/tally_spec.rb",
-    "tally.gemspec"
+    "spec/tally_spec.rb"
   ]
   s.homepage = %q{http://github.com/ivanacostarubio/contador}
   s.licenses = ["MIT"]
@@ -50,20 +50,17 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.1"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<rspec>, ["> 1.2.3"])
     else
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
       s.add_dependency(%q<rspec>, [">= 0"])
-      s.add_dependency(%q<rcov>, [">= 0"])
       s.add_dependency(%q<rspec>, ["> 1.2.3"])
     end
   else
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
     s.add_dependency(%q<rspec>, [">= 0"])
-    s.add_dependency(%q<rcov>, [">= 0"])
     s.add_dependency(%q<rspec>, ["> 1.2.3"])
   end
 end
