@@ -16,13 +16,13 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/ivanacostarubio/tally"
   gem.license = "MIT"
   gem.summary = %Q{This gem counts the numbers of words in a string. It returns each word and the multiplicity}
-  gem.description = %Q{TODO: This gem counts the numbers of words in a string. It returns each word and the multiplicity}
+  gem.description = %Q{This gem counts the numbers of words in a string. It returns each word and the multiplicity}
   gem.email = "ivan@bakedweb.net"
   gem.authors = ["Ivan Acosta-Rubio"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+    gem.add_development_dependency 'rspec', '> 1.2.3'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
