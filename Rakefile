@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "tally"
   gem.homepage = "http://github.com/ivanacostarubio/tally"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{This gem counts the numbers of words in a string. It returns each word and the multiplicity}
+  gem.description = %Q{TODO: This gem counts the numbers of words in a string. It returns each word and the multiplicity}
   gem.email = "ivan@bakedweb.net"
   gem.authors = ["Ivan Acosta-Rubio"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
