@@ -39,3 +39,8 @@ We use a global for omiting frequent words. For example:
 `@sentence.multiplicity`
 
 `=> {:todo=>1}` 
+
+THANKS TO
+---------
+
+Bakedweb.net to allow me to write ruby during work. Esturisti.co for needing the reports that allowed me to extract the functionality on this gem.  
