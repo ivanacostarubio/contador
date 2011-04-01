@@ -12,7 +12,7 @@ INSTALL
 USAGE
 -----
 
-`require `contador`
+`require contador`
 
 `@sentence = Contador.new("Esto sale todo")`
 
@@ -22,7 +22,7 @@ USAGE
 
 `=> {:esto=>1, :sale=>1, :todo=>1}`
 
-OMITING REQUENT WORDS
+OMITING FREQUENT WORDS
 ----------------------
 
 We use a global for omiting frequent words. For example:
