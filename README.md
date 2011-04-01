@@ -3,25 +3,39 @@ TALLY
 
 It a way to count the amount of times each word appears on a string. 
 
+
+INSTALL
+-------
+
+`gem install contador`
+
 USAGE
 -----
 
-`@sentence = Contador.new("Tally is cool.")`
+`require `contador`
 
-`=> #<Contador:0x10103f488 @final={:is=>1, :cool=>1, :tally=>1}, @string="Tally is cool.">`
+`@sentence = Contador.new("Esto sale todo")`
+
+`=> #<Contador:0x10212a860 @final={:esto=>1, :sale=>1, :todo=>1}, @string="Esto sale todo", @omit=[]>`
 
 `@sentence.multiplicity`
 
-`=> {:is=>1, :cool=>1, :tally=>1}` 
+`=> {:esto=>1, :sale=>1, :todo=>1}`
 
 OMITING REQUENT WORDS
 ----------------------
 
 We use a global for omiting frequent words. For example:
 
-`$omit = "yo no"`
 
+`$omits = "esto no sale"`
 
+`=> "esto no sale"`
 
+`@sentence = Contador.new("Esto sale todo")`
 
+`=> #<Contador:0x102110b68 @final={:todo=>1}, @string="Esto sale todo", @omit=[]>`
 
+`@sentence.multiplicity`
+
+`=> {:todo=>1}` 
