@@ -12,7 +12,7 @@ class Contador
 
   def delete_omits
     $omits.split(' ').each do |word|
-      @final.delete(word.to_sym)
+      @final.delete(word)
     end
   end
 
@@ -21,7 +21,7 @@ class Contador
   end
 
   def omit(word)
-    @final.delete(word.to_sym)
+    @final.delete(word)
   end
 
   private
@@ -29,8 +29,8 @@ class Contador
   def split_string_into_hash
     string.split(' ').each do |word|
       begin
-        word.gsub!(/\W+/, '')
-        key = word.downcase.to_sym
+        word.gsub!(/[^0-9A-Za-z[-]_\s]/, '')
+        key = word.downcase
         if @final.has_key?(key)
           @final[key] += 1
         else
@@ -42,3 +42,7 @@ class Contador
     end
   end
 end
+
+
+
+
