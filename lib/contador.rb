@@ -1,11 +1,22 @@
+class SimpleSplitter
+  attr_accessor :ingredients
+
+  def split
+    ingredients.split(" ")
+  end
+end
+
+
+
 class Contador
 
-  attr_accessor :string
+  attr_accessor :string, :splitter
 
-  def initialize(string)
+  def initialize(string, splitter=SimpleSplitter)
     @omit = []
     @string = string
     @final = Hash.new
+    @splitter = splitter
     split_string_into_hash
     delete_omits if $omits
   end
@@ -24,13 +35,18 @@ class Contador
     @final.delete(word)
   end
 
+
   private
 
   def split_string_into_hash
-    string.split(' ').each do |word|
+    s = @splitter.new
+    s.ingredients = string
+
+
+    s.split.each do |word|
       begin
         word.gsub!(/[^0-9A-Za-z[-]_\s]/, '')
-        key = word.downcase
+        key = word.downcase.strip
         if @final.has_key?(key)
           @final[key] += 1
         else

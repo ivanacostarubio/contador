@@ -45,7 +45,7 @@ describe Contador do
 
 end
 
-describe Contador, "No sally words" do
+describe Contador, "No silly words" do
   it "omits some basic words" do 
     contador = Contador.new("y y y precio")
     contador.omit("y")
@@ -64,3 +64,27 @@ describe Contador, "No sally words" do
     contador.multiplicity.should == {"precio" => 1}
   end
 end
+
+
+
+describe Contador, "can be injected how to split words" do
+
+  it "splits words by commas" do
+
+    class CommaSplitter
+      attr_accessor :ingredients
+
+      def split
+        ingredients.split(",")
+      end
+    end
+
+
+    contador = Contador.new("protein shake, coffee", CommaSplitter)
+    contador.multiplicity.should == {"protein shake" => 1, "coffee" => 1}
+  end
+
+
+end
+
+
