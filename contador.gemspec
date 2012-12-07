@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "contador"
-  s.version = "1.2.0"
+  s.version = "2.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ivan Acosta-Rubio"]
-  s.date = "2012-11-14"
+  s.date = "2012-12-07"
   s.description = "This gem counts the numbers of words in a string. It returns each word and the multiplicity"
   s.email = "ivan@bakedweb.net"
   s.extra_rdoc_files = [
