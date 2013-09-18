@@ -48,9 +48,9 @@ describe Contador do
     contador.more_frequent.should == "esta"
   end  
 
-  it "show more frequet value" do
+  it "returns the first value if all are equal" do
     contador = Contador.new("Esto esta depinga. Depinga esta esto.")
-    contador.more_frequent.should == "esto" #if all are equal returns the first value
+    contador.more_frequent.should == "esto"
   end  
 
 end
