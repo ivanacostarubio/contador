@@ -31,6 +31,10 @@ class Contador
     @final
   end
 
+  def more_frequent
+    @final.to_a.max{|a,b| a[1] <=> b[1] }.first
+  end  
+ 
   def omit(word)
     @final.delete(word)
   end
