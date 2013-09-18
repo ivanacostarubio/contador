@@ -42,6 +42,16 @@ describe Contador do
     contador = Contador.new("Baby-Food")
     contador.multiplicity.should == {"baby-food" => 1}
   end  
+  
+  it "show more frequet value" do
+    contador = Contador.new("Esto esta depinga. Depinga esta esto esta.")
+    contador.more_frequent.should == "esta"
+  end  
+
+  it "returns the first value if all are equal" do
+    contador = Contador.new("Esto esta depinga. Depinga esta esto.")
+    contador.more_frequent.should == "esto"
+  end  
 
 end
 
